@@ -1,4 +1,3 @@
-import { CustomIcon } from "@/components/ui/icon-dark-light";
 import Image from "next/image";
 import Link from "next/link";
 
