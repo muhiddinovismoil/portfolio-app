@@ -114,6 +114,7 @@ export const ClientHeader = () => {
                         style={{
                             height: "calc(100vh - 95px)",
                         }}
+                        onClick={() => setMenuOpen(false)}
                     >
                         <div
                             className="w-full h-full flex justify-center"
