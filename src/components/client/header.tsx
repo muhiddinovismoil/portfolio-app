@@ -15,11 +15,12 @@ export const ClientHeader = () => {
 
     return (
         <>
-            <header className="pt-[32px] relative z-50">
+            <header className="pt-[34px] relative z-50 md:pt-[45px] xl:pt-[60px]">
                 <div className="container">
                     <div className="flex pl-[26px] justify-between pr-[27px] items-center">
                         <Link href={"/"} onClick={() => setMenuOpen(false)}>
                             <Image
+                                className="md:w-[161px] md:h-[21px]"
                                 src={
                                     theme === "dark"
                                         ? "/logo/mobile.light.svg"
@@ -30,12 +31,32 @@ export const ClientHeader = () => {
                                 height={16}
                             />
                         </Link>
-                        <div className="flex gap-[29px] items-center">
-                            <div className="hidden gap-[65px] md:flex">
-                                <Link href={"/about"}>About me</Link>
-                                <Link href={"/projects"}>Projects</Link>
-                                <Link href={"/education"}>Education</Link>
-                                <Link href={"/contacts"}>Contact</Link>
+                        <div className="flex gap-[29px] md:gap-[53px] items-center">
+                            <div className="hidden md:gap-[55px] lg:gap-[65px] md:flex">
+                                <Link
+                                    href={"/about"}
+                                    className="text-[17px] font-medium"
+                                >
+                                    About me
+                                </Link>
+                                <Link
+                                    href={"/projects"}
+                                    className="text-[17px] font-medium"
+                                >
+                                    Projects
+                                </Link>
+                                <Link
+                                    href={"/education"}
+                                    className="text-[17px] font-medium"
+                                >
+                                    Education
+                                </Link>
+                                <Link
+                                    href={"/contacts"}
+                                    className="text-[17px] font-medium"
+                                >
+                                    Contact
+                                </Link>
                             </div>
                             <div
                                 onClick={() =>
@@ -45,7 +66,7 @@ export const ClientHeader = () => {
                                 }
                             >
                                 <Image
-                                    className="cursor-pointer"
+                                    className="cursor-pointer md:w-[20px] md:h-[20px]"
                                     width={18}
                                     height={19}
                                     src={
@@ -105,24 +126,28 @@ export const ClientHeader = () => {
                         >
                             <div className="flex flex-col items-center mt-[165px] gap-[60px]">
                                 <Link
+                                    className="font-medium text-[17px]"
                                     href="/about"
                                     onClick={() => setMenuOpen(false)}
                                 >
                                     About me
                                 </Link>
                                 <Link
+                                    className="font-medium text-[17px]"
                                     href="/projects"
                                     onClick={() => setMenuOpen(false)}
                                 >
                                     Projects
                                 </Link>
                                 <Link
+                                    className="font-medium text-[17px]"
                                     href="/education"
                                     onClick={() => setMenuOpen(false)}
                                 >
                                     Education
                                 </Link>
                                 <Link
+                                    className="font-medium text-[17px]"
                                     href="/contacts"
                                     onClick={() => setMenuOpen(false)}
                                 >

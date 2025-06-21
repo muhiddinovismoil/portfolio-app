@@ -12,7 +12,7 @@ export const ClientFooter = () => {
                     <div className="flex justify-between">
                         <h4 className="font-bold text-[14px]">Follow me</h4>
                         <div className="flex items-center gap-[11px]">
-                            <Link href={""} target="_blank">
+                            <Link href={"mailto:mukhiddinovvismoil@gmail.com"}>
                                 <Image
                                     width={20}
                                     height={16}
