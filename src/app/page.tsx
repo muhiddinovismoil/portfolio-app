@@ -37,9 +37,9 @@ export default function Home() {
                                 </p>
                             </div>
                             <div className="flex flex-col gap-[23px] items-center">
-                                <Link
-                                    href={""}
-                                    download={true}
+                                <a
+                                    href="/cv/MuhiddinovIsmoil-Resume.pdf"
+                                    download
                                     className="pl-[45px] font-bold leading-[150%] pr-[41px] py-[17px] flex items-center gap-[12px] border border-white bg-black rounded-[8px] text-white"
                                 >
                                     <img
@@ -48,7 +48,7 @@ export default function Home() {
                                         alt="download icon"
                                     />
                                     Download CV
-                                </Link>
+                                </a>
                                 <Link
                                     href={"/projects"}
                                     className="flex py-[17px] gap-[12px] pl-[49px] pr-[45px] items-center leading-[150%] font-bold bg-white rounded-[8px] text-[#1d1b20] border"
