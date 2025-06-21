@@ -1,1 +1,2 @@
-// this is indexing
+export * from "./contact.type";
+export * from "./education.type";
