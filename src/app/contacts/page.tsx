@@ -2,11 +2,17 @@ import React from "react";
 
 const Contacts = () => {
     return (
-        <main>
-            <section>
-                <div className="container">Contacts</div>
+        <>
+            <section className="pt-[150px]">
+                <div className="container">
+                    <div className="pl-[30px]">
+                        <h2 className="text-[29px] font-bold leading-[83%]">
+                            Contacts
+                        </h2>
+                    </div>
+                </div>
             </section>
-        </main>
+        </>
     );
 };
 

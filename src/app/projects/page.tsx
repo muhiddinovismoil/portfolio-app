@@ -2,11 +2,17 @@ import React from "react";
 
 const Projects = () => {
     return (
-        <main>
-            <section>
-                <div className="container">Projects</div>
+        <>
+            <section className="pt-[150px]">
+                <div className="container">
+                    <div className="pl-[30px]">
+                        <h2 className="text-[29px] font-bold leading-[83%]">
+                            Projects
+                        </h2>
+                    </div>
+                </div>
             </section>
-        </main>
+        </>
     );
 };
 
