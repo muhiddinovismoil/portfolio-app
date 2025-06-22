@@ -3,4 +3,5 @@ export interface ImageI {
     iconLight?: string;
     w?: number;
     h?: number;
+    className?: string;
 }

@@ -11,8 +11,20 @@ const IconDynamic = dynamic(
         ssr: false,
     }
 );
-export const CustomIcon = ({ iconDark, iconLight, w, h }: ImageI) => {
+export const CustomIcon = ({
+    iconDark,
+    iconLight,
+    w,
+    h,
+    className,
+}: ImageI) => {
     return (
-        <IconDynamic iconDark={iconDark} iconLight={iconLight} w={w} h={h} />
+        <IconDynamic
+            iconDark={iconDark}
+            iconLight={iconLight}
+            w={w}
+            h={h}
+            className={className}
+        />
     );
 };
