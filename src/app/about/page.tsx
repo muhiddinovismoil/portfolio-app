@@ -14,7 +14,7 @@ const AboutMe = () => {
                             <h2 className="text-[29px] font-bold text-center">
                                 About me
                             </h2>
-                            <p className="text-[12px] leading-[200%]">
+                            <p className="text-[12px] leading-[200%] md:text-[14px]">
                                 Hi, I'm{" "}
                                 <span className="font-bold">Ismoil</span>, an{" "}
                                 <span className="font-bold">
@@ -47,11 +47,27 @@ const AboutMe = () => {
                                 </span>
                             </p>
                         </div>
-                        <div className="flex justify-center pt-[5px]">
+                        <div className="flex justify-center pt-[5px] gap-[90px]">
+                            <div className="hidden w-[95px] h-[90px] bg-[#c1c1c1] rounded-full md:flex items-center justify-center dark:bg-[#404040] md:h-[100px] md:w-[105px]">
+                                <CustomIcon
+                                    iconDark="/about/dev-tool2.dark.svg"
+                                    iconLight="/about/dev-tool2.light.svg"
+                                    w={55}
+                                    h={48}
+                                />
+                            </div>
                             <div className="w-[95px] h-[90px] bg-[#c1c1c1] rounded-full flex items-center justify-center dark:bg-[#404040]">
                                 <CustomIcon
                                     iconDark="/about/dev-tool.dark.svg"
                                     iconLight="/about/dev-tool.light.svg"
+                                    w={55}
+                                    h={48}
+                                />
+                            </div>
+                            <div className="hidden w-[95px] h-[90px] bg-[#c1c1c1] rounded-full md:flex items-center justify-center dark:bg-[#404040] md:h-[100px] md:w-[105px]">
+                                <CustomIcon
+                                    iconDark="/about/dev-tool3.dark.svg"
+                                    iconLight="/about/dev-tool3.light.svg"
                                     w={55}
                                     h={48}
                                 />
@@ -67,7 +83,7 @@ const AboutMe = () => {
                                 innovation and caffeine.
                             </p>
                         </div>
-                        <div className="flex pt-[4px] gap-[40px] items-center justify-center">
+                        <div className="flex pt-[4px] gap-[40px] items-center justify-center md:gap-[120px]">
                             {StackTechno.map((item) => (
                                 <StackTechnoUi
                                     key={item.id}
