@@ -56,6 +56,17 @@ const AboutMe = () => {
                                 />
                             </div>
                         </div>
+                        <div className="flex flex-col text-center gap-[30px]">
+                            <h3 className="font-bold text-[24px]">
+                                Technology Stack
+                            </h3>
+                            <p className="leading-[150%]">
+                                Essential tools and technologies for modern web
+                                development, powered by the perfect blend of
+                                innovation and caffeine.
+                            </p>
+                        </div>
+                        <div></div>
                     </div>
                 </div>
             </section>

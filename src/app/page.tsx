@@ -6,7 +6,7 @@ export default function Home() {
         <main>
             <section className="pt-[151px] pb-[257px] lg:pt-[200px] lg:pb-[140px] min-[1440px]:pt-[220px] min-[1440px]:pb-[150px]">
                 <div className="container">
-                    <div className="flex flex-col px-[35px] items-center gap-[44px] lg:flex-row lg:justify-around xl:gap-0">
+                    <div className="flex flex-col px-[35px] items-center gap-[44px] lg:flex-row lg:justify-around xl:gap-0 min-[1440px]:pt-[40px]">
                         <div className="lg:w-[400px] xl:w-[412px] xl:h-[394px]">
                             <Image
                                 src={"/hero/my-image.svg"}
