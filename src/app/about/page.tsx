@@ -1,17 +1,18 @@
 import React from "react";
+import { StackTechno } from "@/data";
 import { calculateAge } from "@/func";
-import { CustomIcon } from "@/components";
+import { CustomIcon, StackTechnoUi } from "@/components";
 
 const AboutMe = () => {
     const myAge = calculateAge("2007-08-21");
     return (
         <>
-            <section className="pt-[175px] px-[35px]">
+            <section className="pt-[175px] px-[35px] pb-[140px]">
                 <div className="container">
                     <div className="flex flex-col gap-[75px]">
                         <div className="flex flex-col gap-[45px]">
                             <h2 className="text-[29px] font-bold text-center">
-                                About Me
+                                About me
                             </h2>
                             <p className="text-[12px] leading-[200%]">
                                 Hi, I'm{" "}
@@ -46,7 +47,7 @@ const AboutMe = () => {
                                 </span>
                             </p>
                         </div>
-                        <div className="flex justify-center">
+                        <div className="flex justify-center pt-[5px]">
                             <div className="w-[95px] h-[90px] bg-[#c1c1c1] rounded-full flex items-center justify-center dark:bg-[#404040]">
                                 <CustomIcon
                                     iconDark="/about/dev-tool.dark.svg"
@@ -66,7 +67,17 @@ const AboutMe = () => {
                                 innovation and caffeine.
                             </p>
                         </div>
-                        <div></div>
+                        <div className="flex pt-[4px] gap-[40px] items-center justify-center">
+                            {StackTechno.map((item) => (
+                                <StackTechnoUi
+                                    key={item.id}
+                                    alt={item.alt}
+                                    id={item.id}
+                                    techIcon={item.techIcon}
+                                    title={item.title}
+                                />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
