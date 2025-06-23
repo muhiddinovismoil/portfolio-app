@@ -7,7 +7,7 @@ const Contacts = () => {
         <>
             <section className="pt-[150px] pb-[200px]">
                 <div className="container">
-                    <div className="pl-[30px]">
+                    <div className="px-[30px]">
                         <h2 className="text-[29px] font-bold leading-[83%]">
                             Contacts
                         </h2>
