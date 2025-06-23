@@ -3,7 +3,7 @@ import { EducationI } from "./types";
 export const Education: EducationI[] = [
     {
         id: "education-1",
-        link: "",
+        link: "https://pub-7be1d45c4a744f86846c80e90df909eb.r2.dev/certificates/24907C36200824988f6373-7ff7-4ae3-9b81-076135f4bffe.png",
         title: "IELTS Academic",
         endDate: "02.12.2025",
         subTitle: "B2 Level",
@@ -19,7 +19,7 @@ export const Education: EducationI[] = [
     },
     {
         id: "education-3",
-        link: "",
+        link: "https://pub-7be1d45c4a744f86846c80e90df909eb.r2.dev/certificates/24907C36200824988f6373-7ff7-4ae3-9b81-076135f4bffe.png",
         title: "Bootcamp Full-Stack",
         endDate: "01.05.2025",
         subTitle: "Node.js & React.js Full-Stack",
