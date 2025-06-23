@@ -4,4 +4,6 @@ export interface ContactI {
     link: string;
     iconContact: string;
     iconView: string;
+    iconViewDark: string;
+    iconContactDark: string;
 }

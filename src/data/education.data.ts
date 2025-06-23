@@ -11,7 +11,7 @@ export const Education: EducationI[] = [
     },
     {
         id: "education-2",
-        link: "",
+        link: "https://pub-7be1d45c4a744f86846c80e90df909eb.r2.dev/certificates/24907C36200824988f6373-7ff7-4ae3-9b81-076135f4bffe.png",
         title: "Bootcamp Foundation",
         endDate: "24.08.2025",
         subTitle: "Python & C language basics",
