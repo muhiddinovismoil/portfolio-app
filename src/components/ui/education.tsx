@@ -30,13 +30,13 @@ export const EductaionUi = ({
                     </p>
                 </div>
             </div>
-            <div className="">
+            <div className="pr-[20px] sm:pr-0">
                 <Link
                     href={link}
                     target="_blank"
-                    className="text-[10px] min-[375px]:text-[16px] sm:text-[16px] lg:text-[18px]"
+                    className="text-[16px] sm:text-[16px] lg:text-[18px] flex gap-[5px]"
                 >
-                    View Certificate
+                    View <span className="hidden sm:flex">Certificate</span>
                 </Link>
             </div>
         </div>
