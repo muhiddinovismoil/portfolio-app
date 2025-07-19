@@ -38,7 +38,7 @@ export default function Home() {
                             </div>
                             <div className="flex flex-col gap-[23px] items-center lg:flex-row">
                                 <a
-                                    href="/cv/MuhiddinovIsmoil-Resume.pdf"
+                                    href="/cv/MukhiddinovIsmoil's Resume.pdf"
                                     download
                                     className="pl-[45px] font-bold leading-[150%] pr-[41px] py-[17px] flex items-center gap-[12px] border border-white bg-black rounded-[8px] text-white"
                                 >
