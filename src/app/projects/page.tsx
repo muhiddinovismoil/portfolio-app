@@ -1,8 +1,9 @@
 import React from "react";
 import { ProjectData } from "@/data";
 import { ProjectsUi } from "@/components";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Projects – Ismoil, Full-Stack Developer",
     description:
         "Explore full-stack projects developed by Ismoil using NestJS, TypeScript, Node.js, Python, and PyQt5. Projects include Telegram bots, web APIs, and games.",
