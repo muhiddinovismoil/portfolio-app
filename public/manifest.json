@@ -1,0 +1,27 @@
+{
+    "name": "Ismoil Portfolio",
+    "short_name": "Portfolio",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0f172a",
+    "description": "Portfolio of Ismoil, a Full-Stack Developer specializing in Node.js and React.js.",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "any",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/og-image.png",
+            "sizes": "1200x630",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
