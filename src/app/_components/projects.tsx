@@ -18,18 +18,23 @@ export function Projects() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-8">
-                {projects.map((project) => (
+                {projects.map((project, index) => (
                     <div
                         key={project.id}
                         className="flex flex-col border rounded-xl shadow-sm hover:shadow-md transition p-4"
                     >
-                        <div className="w-full flex justify-center">
+                        <div className="w-full flex justify-center overflow-hidden rounded-md bg-muted aspect-video">
                             <Image
                                 src={project.image}
-                                alt={project.title}
+                                alt={`${project.title} - ${project.description}`}
                                 width={400}
                                 height={200}
-                                className="rounded-md object-cover"
+                                priority={index === 0 || index === 1}
+                                loading={index < 2 ? "eager" : "lazy"}
+                                placeholder="blur"
+                                blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%23f0f0f0' width='400' height='200'/%3E%3C/svg%3E"
+                                className="rounded-md object-cover w-full h-full"
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                         </div>
 
@@ -72,6 +77,7 @@ export function Projects() {
                                     <Link
                                         href={project.liveLink}
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         <ExternalLink className="w-4 h-4 mr-2" />{" "}
                                         Live
@@ -85,7 +91,11 @@ export function Projects() {
                             )}
 
                             <Button asChild variant="outline">
-                                <Link href={project.githubLink} target="_blank">
+                                <Link
+                                    href={project.githubLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <Github className="w-4 h-4 mr-2" /> Code
                                 </Link>
                             </Button>

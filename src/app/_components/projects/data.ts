@@ -29,7 +29,7 @@ export const projects: ProjectsI[] = [
         ],
         githubLink: "https://github.com/muhiddinovismoil/gadgets_bot",
         liveLink: undefined,
-        projectStatus: Status.in_process,
+        projectStatus: Status.completed,
         description:
             "A Telegram bot for buying and selling gadgets (Android, iOS, Laptop, PC). Users submit a short form with photos/videos of their device, which is reviewed by admins before being published to the main channel.",
     },

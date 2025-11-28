@@ -1,4 +1,11 @@
+import { Metadata } from "next";
+import { generateBaseMetadata } from "@/lib/metadata";
 import { Hero, About, Skills, Contacts, Projects } from "./_components";
+
+export const metadata: Metadata = generateBaseMetadata(
+    "Ismoil Mukhiddinov | Full-Stack Developer - Portfolio & Projects",
+    "Discover my portfolio showcasing full-stack web development projects using Node.js, React.js, Next.js, and more. Expert in API design, frontend development, and modern technologies."
+);
 
 export default function Home() {
     return (
