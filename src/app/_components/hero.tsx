@@ -26,7 +26,7 @@ export const Hero = () => {
                     <Button variant="outline">
                         <Link
                             className="flex items-center gap-2"
-                            href={"/cv/MukhiddinovIsmoil's Resume.pdf"}
+                            href={"/cv/Muhiddinov-Ismoil's CV.pdf"}
                         >
                             Download CV <DownloadIcon size={18} />
                         </Link>
