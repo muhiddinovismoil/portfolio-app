@@ -37,6 +37,11 @@ export function StructuredData() {
             "https://t.me/mukhiddinov_ismoil",
             "mailto:mukhiddinovvismoil@gmail.com",
         ],
+        hasCredential: {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "Full-Stack Development",
+            "url": "https://muhiddinovismoil.uz/cv/Muhiddinov-Ismoil's CV.pdf"
+        },
         knowsAbout: [
             "JavaScript",
             "TypeScript",

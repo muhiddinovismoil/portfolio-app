@@ -27,6 +27,8 @@ export const Hero = () => {
                         <Link
                             className="flex items-center gap-2"
                             href={"/cv/Muhiddinov-Ismoil's CV.pdf"}
+                            download
+                            title="Download Ismoil's Full-Stack Developer CV (PDF)"
                         >
                             Download CV <DownloadIcon size={18} />
                         </Link>

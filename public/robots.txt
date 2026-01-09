@@ -4,6 +4,7 @@
 # Allow all bots
 User-agent: *
 Allow: /
+Allow: /cv/
 Disallow: /api/
 Disallow: /.next/
 Disallow: /node_modules/

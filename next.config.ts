@@ -55,6 +55,23 @@ const nextConfig: NextConfig = {
                 ],
             },
             {
+                source: "/cv/:path*",
+                headers: [
+                    {
+                        key: "Cache-Control",
+                        value: "public, max-age=31536000, immutable",
+                    },
+                    {
+                        key: "Content-Type",
+                        value: "application/pdf",
+                    },
+                    {
+                        key: "Content-Disposition",
+                        value: "inline; filename='CV.pdf'",
+                    },
+                ],
+            },
+            {
                 source: "/fonts/:path*",
                 headers: [
                     {
